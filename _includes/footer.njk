@@ -1,0 +1,22 @@
+{% from "node_modules/govuk-frontend/govuk/components/footer/macro.njk" import govukFooter %}
+
+{{ govukFooter({
+  "classes": "app-footer app-footer--full",
+  "containerClasses" : "app-site-width-container",
+  "navigation": [
+    {
+      "title": "Related resources",
+      "columns": 1,
+      "items": [
+        {
+          "href": "https://www.gov.uk/government/collections/digital-data-and-technology-profession-capability-framework",
+          "text": "Digital, Data and Technology Profession Capability Framework"
+        },
+        {
+          "href": "https://digitalpeople.blog.gov.uk/",
+          "text": "Digital people - Following digital, data and technology people and skills activity across government"
+        }
+      ]
+    }
+  ]
+}) }}

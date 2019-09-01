@@ -1,0 +1,21 @@
+---
+layout: layouts/layout-single-page.njk
+title: Notes
+---
+<h1 class="govuk-heading-xl">Notes</h1>
+
+{% set noteslist = collections.note %}
+
+{% for note in noteslist | reverse %}
+  <article class="blog-post blog-post-preview">
+    <header>
+      <h2 class="govuk-heading-l">
+          <a href="{{ note.url | url }}">{{ note.date | readableDate }}</a>
+      </h2>
+    </header>
+    <div class="markdown-output entry-summary">
+      <p>{{ note.data.page.excerpt }}</p>
+    </div>
+    <hr class="govuk-section-break govuk-section-break--visible govuk-section-break--xl govuk-!-margin-top-0">
+  </article>
+{% endfor %}

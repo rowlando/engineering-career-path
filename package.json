@@ -1,0 +1,15 @@
+{
+  "name": "engineering-career-pathway",
+  "version": "0.1.0",
+  "main": "index.js",
+  "repository": "git@github.com:rowlando/engineering-career-path.git",
+  "author": "MoJ Digital and Technology",
+  "license": "MIT",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.9.0",
+    "govuk-frontend": "^3.0.0",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2",
+    "luxon": "^1.17.2"
+  }
+}

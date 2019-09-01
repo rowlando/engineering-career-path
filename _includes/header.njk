@@ -1,0 +1,25 @@
+{% from "node_modules/govuk-frontend/govuk/components/header/macro.njk" import govukHeader -%}
+
+{% block header %}
+  {{ govukHeader({
+    homepageUrl: "#",
+    containerClasses: "govuk-width-container",
+    serviceName: "Engineering Career Framework",
+    serviceUrl: "/",
+    navigation: [
+      {
+        href: "/notes/",
+        text: "Notes",
+        active: page.url === "/notes/"
+      },
+      {
+        href: "#about",
+        text: "About (coming soon)"
+      },
+      {
+        href: "#framework",
+        text: "Framework (coming soon)"
+      }
+    ]
+  }) }}
+{% endblock %}

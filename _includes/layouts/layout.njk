@@ -1,0 +1,11 @@
+{% extends "./generic.njk" %}
+
+{% block body %}
+
+  <main id="main-content" role="main">
+    {{ content | safe }}
+  </main>
+
+  {% include "footer.njk" %}
+
+{% endblock %}

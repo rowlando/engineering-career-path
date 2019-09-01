@@ -1,0 +1,13 @@
+{% extends "./generic.njk" %}
+
+{% block body %}
+  <main id="main-content" class="govuk-main-wrapper govuk-main-wrapper--l" role="main">
+    <div class="govuk-width-container">
+      {{ content | safe }}
+    </div>
+  </main>
+
+  {% include "footer.njk" %}
+</div>
+
+{% endblock %}
